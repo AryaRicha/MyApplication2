@@ -44,7 +44,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(i)
             }
 
-
+         b5.setOnClickListener{
+            var i = Intent(this@MainActivity,
+                                                            WelcomeActivity::class.java)
+            i.putExtra("marks",et4.text.toString())
+            startActivity(i)
+        }
 
 
     }
